@@ -9,4 +9,4 @@ An interactive birthday website built using HTML, CSS, and JavaScript.
 - Responsive design
 
 ## Live Demo
-[View Live Site](brother-bdyy.netlify.app)
+[View Live Site](https://brother-bdyy.netlify.app/)
