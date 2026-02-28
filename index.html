@@ -1,0 +1,1143 @@
+<html>
+<head>
+<title>
+BHAI KA BDYY</title>
+
+
+<style>
+  .body{
+     background: linear-gradient(135deg, #f3d7d7, #f070a3, #ceadb3, rgb(249, 120, 120), purple);
+     animation: bgMove 5s ease infinite;
+     background-size: 300% 300%;
+     overflow: auto;
+    
+     
+     
+     
+  }
+ 
+    .specialButton{
+        width:500px;
+        height: 100px;
+        padding:10px;
+        color:#1b1f3b;
+                background-color:pink;
+                display:block;
+                justify-content:center;
+        font-size:40px;
+        align-items:center;
+        font-family:Algerian;
+        text-align:center;
+        margin:20px auto;
+        border-radius:20px;
+        border:dotted 5px #ff6699;
+        cursor:pointer;
+    }
+    @keyframes bgMove{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+    
+.para{
+    margin :0 auto; 
+    color:#c2185b; 
+    font-family:Bookman Old style;
+    margin-left: 35px;
+    margin-right: 40px;
+}
+.Anshika{
+    font-family: curlz mt;
+    font-size: 75px;
+    color:rgb(191, 50, 50);
+    text-align:center;
+
+}
+
+
+.blur #letter{
+    filter: none;
+}
+
+.gallery{
+  display:grid; /* grid layout */
+  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); /* responsive columns */
+  gap:30px; /* space between gifts */
+  width:90%;
+  max-width:1200px;
+  margin-left: 75px;
+}
+
+/* Hide checkbox */
+.gift-toggle{
+  display:none; /* only state chahiye, visible nahi */
+}
+
+/* Gift wrapper */
+.gift{
+  position:relative; /* child absolute ke liye reference */
+  width:180px; /* fixed gift size */
+  height:200px;
+  cursor:pointer; /* clickable feel */
+  transform-style:preserve-3d; /* 3D allow */
+}
+
+/* Gift box bottom */
+.gift-box{
+  position:absolute; /* exact placement */
+  width:100%;
+  height:100%;
+  background:#d90429; /* red base */
+  border-radius:8px; /* smooth edges */
+  display:flex; /* image center */
+  justify-content:center;
+  align-items:center;
+  overflow:hidden; /* image bahar na nikle */
+  box-shadow:0 15px 25px rgba(0,0,0,0.2); /* realistic shadow */
+}
+
+/* Gift lid */
+.gift-lid{
+  position:absolute;
+  width:100%;
+  height:55px; /* lid height */
+  background:#ef233c; /* lighter red */
+  top:0;
+  border-radius:8px 8px 0 0; /* only top rounded */
+  transform-origin:top; /* hinge effect */
+  transition:2s ease; /* smooth open */
+  z-index:2; /* lid always upar */
+}
+
+/* Ribbon vertical */
+.ribbon-v{
+  position:absolute;
+  width:18px;
+  height:100%;
+  background:gold;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+/* Ribbon horizontal */
+.ribbon-h{
+  position:absolute;
+  height:18px;
+  width:100%;
+  background:gold;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* Image inside gift */
+.gift-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* stretch na ho */
+  transform:translateY(100%); /* initially hidden below */
+  transition:3s ease; /* smooth reveal */
+}
+
+/* ===== OPEN EFFECT ===== */
+
+/* Lid rotate when checkbox checked */
+.gift-toggle:checked + .gift .gift-lid{
+  transform:rotateX(120deg); /* lid open */
+}
+
+/* Image rise when open */
+.gift-toggle:checked + .gift .gift-box img{
+  transform:translateY(0); /* photo reveal */
+}
+.gift-item{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.gift-text{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+  text-transform: uppercase;
+}
+.gift-item2{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text2{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+
+}
+.gift-item3{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.gift-text3{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+.gift-item4{
+  display:flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 60px; 
+}
+.gift-text4{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+.gift-item5{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.gift-text5{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+}
+.gift-item6{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+ 
+
+}
+.gift-text6{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+.gift-item7{
+  display:flex;
+  flex-direction: column;
+  align-items: center; 
+   margin-top: 60px; 
+    
+  
+}
+.gift-text7{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+.gift-item8{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text8{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+
+.gift-item9{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+   margin-top: 60px;
+}
+.gift-text9{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+
+.gift-item10{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text10{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   margin-top: 60px;
+    text-transform: uppercase;
+}
+
+.gift-item11{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text11{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+
+.gift-item12{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text12{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+
+.gift-item13{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text13{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+.gift-item14{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text14{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+
+.gift-item15{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text15{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+   text-transform: uppercase;
+  max-width: 180px;
+}
+.gift-item16{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text16{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item17{
+  display:flex;
+  flex-direction: column;
+  align-items: center; 
+   margin-top: 60px; 
+  
+}
+.gift-text17{
+  margin-top: 12px;
+  font-size: 16px;
+   text-transform: uppercase;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item18{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text18{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+   text-transform: uppercase;
+  max-width: 180px;
+}
+.gift-item19{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+   margin-top: 60px;  
+  
+}
+.gift-text19{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+   text-transform: uppercase;
+  max-width: 180px;
+}
+.gift-item20{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text20{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item21{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text21{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+  text-align: center;
+  max-width: 180px;
+   text-transform: uppercase;
+}
+.gift-item22{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text22{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item23{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text23{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item24{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text24{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item25{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text25{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item26{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text26{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item27{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+.gift-text27{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.gift-item30{
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 60px;
+}
+.gift-text30{
+  margin-top: 12px;
+  font-size: 16px;
+  color:#3a0f2e;
+   text-transform: uppercase;
+  text-align: center;
+  max-width: 180px;
+}
+.letter{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    background:white;
+    color:#c2185b;
+    padding:30px;
+    width:800px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.3);
+    transition:0.4s ease;
+    z-index:1000;
+}
+#overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:transparent;
+  z-index:9999;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body class="body">
+  <div id="overlay">
+  <audio id="bg-music" autoplay loop>
+  <source src="audio1.mp3" type="audio/mp3">
+</audio>
+
+</div>
+
+
+<br><br><br><br><br>
+
+<h1 style="margin: 0 auto; color:rgb(191, 50, 50) ; font-family:Curlz MT; font-size:60px; text-align:center; ;">HAPPY BIRTHDAY BHAIIIIIIII💖💖<h1>
+<hr style="width:10%; margin:0px auto; color:red; border:2px solid rgb(191, 50, 50)"> <br><br>
+<p class="para">HAPPY BIRTHDAY BHAIYAA..
+</p><br>
+<input class="specialButton" type="button" value="CLICK ❣️" onclick="showLetter()"></input>
+
+<br><h1 class="Anshika">
+    Beautiful Special Memories With Youuuuuuuuuuuuuuu😍💗🫠
+
+</h1>
+<br>
+<br>
+<br><br>
+
+<div class="gallery">
+
+<!-- ===== GIFT 1 ===== -->
+ <div class="gift-item">
+<input type="checkbox" id="g1" class="gift-toggle" >
+<label for="g1" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo1.jpeg">
+  </div>
+</label>
+<p class="gift-text">
+  ADD YOUR TEXT HERE....
+</p>
+</div>
+
+<div class="gift-item2">
+<!-- ===== GIFT 2 ===== -->
+<input type="checkbox" id="g2" class="gift-toggle">
+<label for="g2" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo2.jpeg">
+  </div>
+</label>
+<p class="gift-text2">
+ADD YOUR TEXT HERE....
+</p>
+</div>
+
+<div class="gift-item3">
+
+<input type="checkbox" id="g3" class="gift-toggle">
+<label for="g3" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo3.jpeg">
+  </div>
+</label>
+<p class="gift-text3">
+  ADD YOUR TEXT HERE....
+</p>
+</div>
+
+
+<div class="gift-item4">
+<input type="checkbox" id="g4" class="gift-toggle">
+<label for="g4" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo4.jpeg">
+  </div>
+</label>
+<p class="gift-text4">
+  ADD YOUR TEXT HERE....
+</p>
+</div>
+
+
+<div class="gift-item5">
+<input type="checkbox" id="g5" class="gift-toggle">
+<label for="g5" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo5.jpeg">
+  </div>
+</label>
+<p class="gift-text5">
+  ADD YOUR TEXT HERE....
+  
+</p>
+</div>
+
+<div class="gift-item6">
+<input type="checkbox" id="g6" class="gift-toggle">
+<label for="g6" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo6.jpeg">
+  </div>
+</label>
+<p class="gift-text6">
+ADD YOUR TEXT HERE....
+</p>
+</div>
+
+<div class="gift-item7">
+<input type="checkbox" id="g7" class="gift-toggle">
+<label for="g7" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo7.jpeg">
+  </div>
+</label>
+<p class="gift-text7">
+  ADD YOUR TEXT HERE....
+  
+</p>
+</div>
+<div class="gift-item8">
+<input type="checkbox" id="g8" class="gift-toggle">
+<label for="g8" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo8.jpeg">
+  </div>
+</label>
+<p class="gift-text8">
+  ADD YOUR TEXT HERE....
+  
+</p>
+</div>
+<div class="gift-item9">
+<input type="checkbox" id="g9" class="gift-toggle">
+<label for="g9" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo9.jpeg">
+  </div>
+</label>
+<p class="gift-text9">
+  ADD YOUR TEXT HERE....
+  
+</p>
+</div>
+
+<div class="gift-item10">
+<input type="checkbox" id="g10" class="gift-toggle">
+<label for="g10" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo10.jpeg">
+  </div>
+</label>
+<p class="gift-text10">
+  ADD YOUR TEXT HERE....
+  
+</p>
+</div>
+
+<div class="gift-item11">
+<input type="checkbox" id="g11" class="gift-toggle">
+<label for="g11" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo11.jpeg">
+  </div>
+</label>
+<p class="gift-text11">
+  ADD YOUR TEXT HERE....
+  
+</p>
+</div>
+
+<div class="gift-item12">
+<input type="checkbox" id="g12" class="gift-toggle">
+<label for="g12" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo12.jpeg">
+  </div>
+</label>
+<p class="gift-text12">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item13">
+<input type="checkbox" id="g13" class="gift-toggle">
+<label for="g13" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo13.jpeg">
+  </div>
+</label>
+<p class="gift-text13">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item14">
+<input type="checkbox" id="g14" class="gift-toggle">
+<label for="g14" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo14.jpeg">
+  </div>
+</label>
+<p class="gift-text14">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item15">
+<input type="checkbox" id="g15" class="gift-toggle">
+<label for="g15" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo15.jpeg">
+  </div>
+</label>
+<p class="gift-text15">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item16">
+<input type="checkbox" id="g16" class="gift-toggle">
+<label for="g16" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo16.jpeg">
+  </div>
+</label>
+<p class="gift-text16">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item17">
+<input type="checkbox" id="g17" class="gift-toggle">
+<label for="g17" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo17.jpeg">
+  </div>
+</label>
+<p class="gift-text17">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item18">
+<input type="checkbox" id="g18" class="gift-toggle">
+<label for="g18" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo18.jpeg">
+  </div>
+</label>
+<p class="gift-text18">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item19">
+<input type="checkbox" id="g19" class="gift-toggle">
+<label for="g19" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo19.jpeg">
+  </div>
+</label>
+<p class="gift-text19">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item20">
+<input type="checkbox" id="g20" class="gift-toggle">
+<label for="g20" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo20.jpeg">
+  </div>
+</label>
+<p class="gift-text20">
+  😂😂😂<br>
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item21">
+<input type="checkbox" id="g21" class="gift-toggle">
+<label for="g21" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo21.jpeg">
+  </div>
+</label>
+<p class="gift-text21">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item22">
+<input type="checkbox" id="g22" class="gift-toggle">
+<label for="g22" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo22.jpeg">
+  </div>
+</label>
+<p class="gift-text22">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+<div class="gift-item23">
+<input type="checkbox" id="g23" class="gift-toggle">
+<label for="g23" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo23.jpeg">
+  </div>
+</label>
+<p class="gift-text23">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item24">
+<input type="checkbox" id="g24" class="gift-toggle">
+<label for="g24" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo24.jpeg">
+  </div>
+</label>
+<p class="gift-text24">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item25">
+<input type="checkbox" id="g25" class="gift-toggle">
+<label for="g25" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo25.jpeg">
+  </div>
+</label>
+<p class="gift-text25">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item26">
+<input type="checkbox" id="g26" class="gift-toggle">
+<label for="g26" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo26.jpeg">
+  </div>
+</label>
+<p class="gift-text26">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item27">
+<input type="checkbox" id="g27" class="gift-toggle">
+<label for="g27" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo27.jpeg">
+  </div>
+</label>
+<p class="gift-text27">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+<div class="gift-item30">
+<input type="checkbox" id="g30" class="gift-toggle">
+<label for="g30" class="gift">
+  <div class="gift-lid">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+  </div>
+  <div class="gift-box">
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+    <img src="photo30.jpeg">
+  </div>
+</label>
+<p class="gift-text30">
+ADD YOUR TEXT HERE....  
+</p>
+</div>
+
+
+</div>
+
+
+<div id="letter" class="letter">
+  <span onclick="closeLetter()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size: 20px;">✕</span>
+    <h2>💌 For My Dear Brother</h2>
+    <p>
+        HAPPY BIRTHDAY BHAI ❤️
+ADD YOUR LETTER HERE....
+</p>
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
